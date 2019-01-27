@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<meta name="description" content="こちらは株式会社ＳＰＬアネッグの公式ホームページです"> 
+		<meta name="keywords" content="SPL,アネッグ,ＳＰＬ,汎用機,COBOL,プログラム,ソフトウェア,開発,派遣, Aneg, SPL Aneg, Information System, Insurance System, Insurance, Life  Insurance, Mainframe System, Project Management, System Planning, System Design"> 
+		<title>株式会社ＳＰＬアネッグ</title> 
+	<!-- Start Main CSS and Javascript -->		
+		<link id="switchcss" href="css/style_others.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="js/browserdetect.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style_common.css?v=474dee2efac59e2dcac7bf6c37365ed0" />
+		<script type="text/javascript" src="js/jquery.min.js?v=20180701000000"></script>
+	<!-- End Main CSS and Javascript -->
+	<!-- Start Drop-down menu Cascading Style Sheet -->
+		<link rel="stylesheet" href="css/fancydropdown.css?v=474dee2efac59e2dcac7bf6c37365ed">
+	<!-- End Drop-down menu Cascading Style Sheet -->
+	<!-- Start Auto Tab Javascript -->		
+		<script type="text/javascript">	
+var uniqueNum = new Date().getTime();
+var jsURL = 'js/jquery.min.js?ver=20180701000000' ;
+var jsElement=document.createElement('link')
+jsElement.setAttribute('type','text/javascript')
+jsElement.setAttribute('href', jsURL);
+document.getElementsByTagName("head")[0].appendChild(jsElement);
+
+var uniqueNum = new Date().getTime();
+var cssURL = 'css/style_common-ja.css?ver=20180701000000';
+var cssElement=document.createElement('link')
+cssElement.setAttribute('rel','stylesheet')
+cssElement.setAttribute('type','text/css')
+cssElement.setAttribute('href', cssURL);
+document.getElementsByTagName("head")[0].appendChild(cssElement);
+		
+			//Set the id names of your tablink (without a number at the end)
+			var tablink_idname = new Array("tablink")
+			//Set the id name of your tabcontentarea (without a number at the end)
+			var tabcontent_idname = new Array("tabcontent") 
+			//Set the number of your tabs
+			var tabcount = new Array("3")
+			//Set the Tab wich should load at start (In this Example:Tab 2 visible on load)
+			var loadtabs = new Array("1")  
+			//Set the Number of the Menu which should autochange (if you dont't want to have a change menu set it to 0)
+			var autochangemenu = 1;
+			//the speed in seconds when the tabs should change
+			var changespeed = 4;
+			//should the autochange stop if the user hover over a tab from the autochangemenu? 0=no 1=yes
+			var stoponhover = 0;
+			//END MENU SETTINGS
+			/*Swich EasyTabs Functions - no need to edit something here*/
+			function easytabs(menunr, active) {if (menunr == autochangemenu){currenttab=active;}if ((menunr == autochangemenu)&&(stoponhover==1)) {stop_autochange()} else if ((menunr == autochangemenu)&&(stoponhover==0))  {counter=0;}menunr = menunr-1;for (i=1; i <= tabcount[menunr]; i++){document.getElementById(tablink_idname[menunr]+i).className='tab'+i;document.getElementById(tabcontent_idname[menunr]+i).style.display = 'none';}document.getElementById(tablink_idname[menunr]+active).className='tab'+active+' tabactive';document.getElementById(tabcontent_idname[menunr]+active).style.display = 'block';}var timer; counter=0; var totaltabs=tabcount[autochangemenu-1];var currenttab=loadtabs[autochangemenu-1];function start_autochange(){counter=counter+1;timer=setTimeout("start_autochange()",1000);if (counter == changespeed+1) {currenttab++;if (currenttab>totaltabs) {currenttab=1}easytabs(autochangemenu,currenttab);restart_autochange();}}function restart_autochange(){clearTimeout(timer);counter=0;start_autochange();}function stop_autochange(){clearTimeout(timer);counter=0;}
+			window.onload=function(){
+			var menucount=loadtabs.length; var a = 0; var b = 1; do {easytabs(b, loadtabs[a]);  a++; b++;}while (b<=menucount);
+			if (autochangemenu!=0){start_autochange();}
+			}
+		</script> 
+	<!-- Start Auto Tab Javascript -->	
+	
+	 <style type="text/css"> 
+html, body {
+height:100%;
+padding:0;
+margin:0;
+background:#fff;
+
+.menux { 
+				width:150px;
+			}
+			.menux ul {
+				margin:0px; 
+				padding:0px; 
+				list-style:none; 
+				text-align:left;
+			}
+			.menux li {
+				display:inline; 
+				background:url(css/check2.png); 
+				position:relative;
+			}
+			.menux li a {
+				color:#ffffff; 
+				text-decoration:none; 
+				padding:4px 0px 7px 4px; 
+			}
+			.menux li a.tabactive {
+				background:url(css/uncheck2.png); 
+				position:relative;
+			}
+			#tabcontent1,#tabcontent2,#tabcontent3,#tabcontent4,#anothercontent1,#anothercontent2, #anothercontent3, #anothercontent4,#anothercontent5, #anothercontent6 {
+				width:400px; 
+				text-align:left;
+				padding:10px 0px; 
+				font-size:12px;
+			}
+			.emailUs a:link {
+			color: black; 
+			background-color: transparent; 
+			text-decoration: none;
+			}
+			.emailUs a:hover {
+			color: blue; 
+			background-color: transparent; 
+			text-decoration: none;
+			}
+}
+
+</style> 
+	</head>
+	<body align="center" style="background:white;"> 
+		<div id="page" >
+			<div align="center" height="100%">
+	<!-- Start Header Part -->			
+				<table width="100%" cellpadding="0" cellspacing="0" class="entire"> 
+					<tr>
+					<td>
+					<!-- Start Banner Part -->
+							<table width="width:100%" height="680" class="homefrontHome" cellspacing="0" cellpadding="0"> 
+								<tr> 
+									<td style=" background-image: url('images/spl-001.jpg'); background-size: cover">
+								<div class="toshow" style="display:none;position:absolute; ">
+										<div style="position:relative; margin: 0 auto;">
+											ADVANCED NEXT GENERATION 
+										</div>
+									</div>
+									<div class="toshow2" style="display:none;position:absolute;">
+										<div style="position:relative; margin: 0 auto;">
+											～ベストなソリューションを次世代へ～
+										</div>
+									</div>
+									</td> 
+								</tr> 
+							</table>
+		<!-- End Banner Part -->
+		</td>
+						<td>
+						<table width="100%"  cellpadding="0" cellspacing="0" class="header"> 
+								<tr> 
+									<td width="150"  valign="top">
+										<div align="left"><a href="index.html"><img class="logoSize" src="images/logo2enEditedかたかな.png" alt="SPL ANEG Logo" /></a></div>
+									</td> 
+									<td >
+										<!-- Start Menu Part -->
+							<table width="100%"  cellpadding="0" cellspacing="0" class="nav" > 
+								<tr>
+									<td>
+										<div id="menu">
+											<ul class="tabs">	
+												<li class="currentpage">
+													<a href="index.html">
+														<span>ホーム</span>
+													</a>
+												</li>
+												<li >
+													<span class="divisionHome">|</span>
+												</li>
+												<li class="hasmore"><a href="outline-en.html"><span>会社情報</span></a>
+													<ul class="dropdown" style="display: none; ">
+														<li>
+															<a href="greeting.html" style="padding-left: 0px; ">ご挨拶</a>
+														</li>
+														<li>
+															<a href="outline.html" style="padding-left: 0px; ">会社概要</a>
+														</li>
+													</ul>
+												</li>
+												<li >
+													<span class="divisionHome">|</span>
+												</li>
+												<li class="regular">
+													<a href="services.html">
+														<span>サービス</span>
+													</a>
+												</li>											
+												<li >
+													<span class="divisionHome">|</span>
+												</li>
+												<li class="regular">
+													<a href="recruit.html" >
+														<span>採用情報</span>
+													</a>
+												</li>
+												<li >
+													<span class="divisionHome">|</span>
+												</li>											
+												<li class="regular">
+													<a href="access.html">
+														<span>アクセス</span>
+													</a>
+												</li>
+												<li >
+													<span class="divisionHome">|</span>
+												</li>	
+												<li class="regular">
+													<a href="contact.html">
+														<span>お問い合わせ</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</td>		
+								</tr> 
+							</table>  
+		<!-- End Menu Part -->
+							</td>
+									<td width="360">
+										<div align="right">  
+											 
+											<a href="index-en.html"  class="language" style="color:white;" onMouseOver="this.style.color='#6699d5'" onMouseOut="this.style.color='#ecf0fe'">ENGLISH</a>
+										</div> 
+									</td>
+								</tr>
+							</table>						
+						</td>
+					</tr>
+		<!-- End Header Part -->
+					<tr> 
+						<td>		
+							<table width="100%" height="10" border="0" cellpadding="0" cellspacing="0" class="entiretop">
+								<tr>
+									<td></td>
+								</tr>
+							</table>
+						<!--	<table width="100%" height="100" cellspacing="0" > 
+								<tr> 
+									<td width="180" bgcolor="#6699cc">
+							<center>
+								<div class="minititle"  style="display: inline-block; text-align: left;">
+											<!-- <div class="column left" style="background-color:#aaa;">
+											</div>
+											<div class="minititleHome">
+											       consulting
+										    </div>
+										     <div >
+											       <img src="images/bar1.png"  /><br/><br/>
+										     </div>
+										<div class="minidescHome">
+											<p style="font-weight:normal;">We provide solutions and strategies to different 、<br>challenges faced by small-medium enterprises... </p>
+											<br/><br/>
+											<table bgcolor="#336699" cellspacing="0" cellpadding="2">
+												<tr>
+													<td align="center" width="60">
+														<a href="services-en.html#consulting" class="more"> MORE </a>
+													</td>													
+												</tr>
+											</table>
+										</div>	
+									</div>
+							</center>
+								</td>
+									<td width="180" bgcolor="#336699">
+							<center>
+								<div class="minititle"  style="display: inline-block; text-align: left;">
+										<div class="column middle" style="background-color:#aaa;">
+										</div>
+											<div class="minititleHome">
+													system development  
+											</div>
+										<div >
+											<img src="images/bar2.png"   /><br/><br/>
+										</div>
+										<div class="minidescHome">
+										 	<p  style="font-weight:normal;">We design and build precise Information System<br> that accurately achieve the client's needs and...</p>
+											<br/><br/>
+											<table bgcolor="#003366" cellspacing="0" cellpadding="2">
+												<tr>
+													<td align="center" width="60">
+														<a href="services-en.html#sysdev" class="more"> MORE </a>
+													</td>													
+												</tr>
+											</table>
+										</div>
+									</div>	
+							</center>
+									</td>
+									<td width="180" bgcolor="#003366">
+							<center>
+								<div class="minititle" style="display: inline-block; text-align: left;">
+										<div class="column right" style="background-color:#aaa;">
+											</div>
+											
+											<div class="minititleHome">
+											offshore development
+										</div>	
+										<div>
+											<img src="images/bar3.png" /><br/><br/>
+										</div>
+										<div class="minidescHome">
+											<p style="font-weight:normal;">To lower the cost of system development, <br>we also offer offshore development <br> that is tailored to fit.. </p>
+											<br/><br/>
+											<table bgcolor="#6699cc" cellspacing="0" cellpadding="2">
+												<tr>
+													<td align="center" width="60">
+														<a href="services-en.html#offshore" class="more"> MORE </a>
+													</td>													
+												</tr>
+											</table>
+										</div>
+										</div>	
+							 </center>
+									</td>
+								</tr> 
+							</table>-->
+							<table width="100%" height="0" cellspacing="0">
+								<tr>
+									<td height="20">
+									</td>
+								</tr>
+								<tr>
+									<td width="50%" valign="top">
+										<div class="hpbelowtitle">
+											新着情報
+										</div>
+										<div class="hpbelowdesc">
+											<ul type="square"> 
+												<li class="fontNormal">2018.8.1 弊社ホームページをリニューアルしました</li>
+												<li class="fontNormal">2015.3.13 個人情報の紛失に関するご報告とお詫び</li>　　　　
+													<a style="padding-bottom:20px;" href="pdf/release_20150313.pdf" target="_blank" class="fontNormal">（詳細）</a>
+												<li class="fontNormal" style="padding-top:20px;"  >2013.1.31 弊社ホームページをリニューアルしました</li>
+											</ul>
+										</div>
+									</td> 
+									<td width="50%" valign="top">
+									</td>
+								</tr>
+							</table>
+		<a href="http://privacymark.jp/"><img align = "right" src="images/pmark_75_JP.png" alt="プライバシーマーク制度へのリンク" width="75" height="75" hspace = "30">
+						</td>		
+					</tr> 
+				</table>
+				<table width="100%" height="10" border="0" cellpadding="0" cellspacing="0" class="entirebelow">
+					<tr>
+						<td>
+							<div align="center">
+								<a href="index.html" class="footerFontSizeMobile" style="font-family: Noto Sans Japanese,æ¸¸ã‚´ã‚·ãƒƒã‚¯,YuGothic,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3,Hiragino Kaku Gothic ProN,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,sans-serif; color:black;">ホーム</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="footerDivider">　| </span>
+								<a href="privacy.html"class="footerFontSizeMobile"  style="font-family: Noto Sans Japanese,æ¸¸ã‚´ã‚·ãƒƒã‚¯,YuGothic,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3,Hiragino Kaku Gothic ProN,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,sans-serif; color:black;">個人情報保護方針</a>&nbsp;&nbsp;&nbsp;<span class="footerDivider">　| </span>
+								<a href="links.html" class="footerFontSizeMobile"  style="font-family: Noto Sans Japanese,æ¸¸ã‚´ã‚·ãƒƒã‚¯,YuGothic,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3,Hiragino Kaku Gothic ProN,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,sans-serif; color:black;">リンク集</a>&nbsp;&nbsp;&nbsp;<span class="footerDivider">　| </span>
+								<a href="terms.html" class="footerFontSizeMobile"  style="font-family: Noto Sans Japanese,æ¸¸ã‚´ã‚·ãƒƒã‚¯,YuGothic,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3,Hiragino Kaku Gothic ProN,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,sans-serif; color:black;">利用規約</a>&nbsp;&nbsp;&nbsp;<span class="footerDivider">　| </span>
+								<a href="contact.html" class="footerFontSizeMobile" style="font-family: Noto Sans Japanese,æ¸¸ã‚´ã‚·ãƒƒã‚¯,YuGothic,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3,Hiragino Kaku Gothic ProN,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,sans-serif; color:black;">お問い合わせ</a><br/>				 
+								<span class="copyright">Copyright(C) 2008-2018 SPL ANEG Co.,Ltd. All Rights Reserved </span><br />
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		
+		<!--mobile-->
+		<div id="mobile" >
+	<div style="background:transparent;">
+	
+	
+	       <header class="indexBgBannerPicM">
+		   <div align="left"><a href="index.html"><img class="mobileLogoIndex" src="images/logo2enEdited.png" alt="SPL ANEG Logo" style="background:transparent;" /></a></div>
+		   
+		   <div align="right"><a href="index-en.html"   class="languageChangeMobile" style="color:white;" >ENGLISH</a></div> 
+		   
+		   <div class= "bannerTextIndexM"  >Advanced Next Generation</div>
+									
+		   </header>
+		   </div>
+			<nav>
+				<ul class=""style="font-size:17px;">
+					  <li><a href="index.html">ホーム</a></li>
+					  <li><a  href="greeting.html">ご挨拶</a></li>
+					  <li><a href="outline.html">会社概要</a></li>
+					  <li><a href="services.html">サービス</a></li>
+					   <li><a href="recruit.html">採用情報</a></li>
+					  <li><a href="access.html">アクセス</a></li>
+					  <li><a   href="contact.html">お問い合わせ</a></li>
+				</ul>
+
+				<div class="handle" style="font-size:23px;">メニュー</div>
+			</nav>
+
+			<div class="latestnews">
+				<h1 class="news-title">
+					<div class="news-latest-title">&nbsp;&nbsp;&nbsp;新着情報</div>
+				</h1>
+			
+				
+				
+				
+				<aside class="sidebarpmark" >
+					<div class="eventdates" >
+
+							 <ul> 
+								 <li >
+									<div ><p class="indexpaddingboldMobile">2018.8.1 弊社ホームページをリニューアルしました</p></div>
+								</li>
+								 <li  >
+									<div ><p>2015.3.13 個人情報の紛失に関するご報告とお詫び</p>
+									<a class="indexpaddingboldMobile" href="pdf/release_20150313.pdf" target="_blank" class="fontNormal">（詳細）</a></div>
+								</li>
+								 <li  >
+									<div ><p style="font-weight:bold;">2013.1.31 弊社ホームページをリニューアルしました</p></div>
+								</li>
+							   </ul> 
+									  
+					
+					</div>
+				</aside>
+				
+				<!--PMARK-->
+				<main class="news-content">
+					<div class="pmarkgrid"><a href="http://privacymark.jp/"><img align = "right" src="images/pmark_75_JP.png" alt="プライバシーマーク制度へのリンク" class="pmarkIndexM" ></div>
+				</main>
+			</div>
+	<!--relative footer-->	
+	<div class="footerCopyRightRelativeM">
+<div class="footer_design">
+							 <ul> 
+								 <li class="footer_title_mobile">
+									<div ><p><a href="privacy.html">個人情報保護方針</a></p></div>
+								</li>
+								 <li class="footer_title_mobile">
+									<div ><p><a href="links.html">リンク</a></p></div>
+								</li>
+								 <li  class="footer_title_mobile">
+									<div ><p><a href="terms.html">利用規約</a></p></div>
+								</li>
+							   </ul> 
+</div>	
+<h2 class="copyright_spl">
+					<div class="copyrightmobile">Copyright(C) 2008-2018 SPL ANEG Co.,Ltd. All Rights Reserved </div>
+		</h2>				
+				
+</div>  <!--end of footer and copyright-->				
+		<div class="footer_spl" >	
+		<div style="position: absolute;
+    overflow: hidden;
+    bottom: 0;width:100%;background-color:#E1E1F2;">
+		<footer class="footer-index">
+					<div class="footer_design">
+							 <ul> 
+								 <li class="footer_title_mobile">
+									<div ><p><a href="index.html">ホーム</a></p></div>
+								</li>
+								 <li  class="footer_title_mobile">
+									<div ><p><a href="recruit.html">利用規約</a></p></div>
+								</li>
+								 <li class="footer_title_mobile">
+									<div ><p><a href="contacts.html">お問い合わせ</a></p></div>
+								</li>
+							   </ul> 
+					</div>
+		</footer>
+		<h2 class="copyright_spl">
+					<div class="copyrightmobile">Copyright(C) 2008-2018 SPL ANEG Co.,Ltd. All Rights Reserved </div>
+		</h2> 
+		<div>
+	  <div>	  <!--//end of footer	,bug not in the footer	-->			
+			
+	</div>
+	
+	<script>
+		//Toggle for mobile menu
+		$('.handle').click(function(){
+				$('nav ul').toggleClass('showing');
+			});
+			
+		</script>
+		<!-- Start Drop Down Menu Script -->
+		<script type="text/javascript" src="js/fancydropdown.js"></script>
+		<script type="text/javascript">
+		
+				var uniqueNum = new Date().getTime();
+var cssURL = 'css/style_common-ja.css?ver=20180701000000';
+var cssElement=document.createElement('link')
+cssElement.setAttribute('rel','stylesheet')
+cssElement.setAttribute('type','text/css')
+cssElement.setAttribute('href', cssURL);
+document.getElementsByTagName("head")[0].appendChild(cssElement);
+
+
+var uniqueNum = new Date().getTime();
+var jsURL = 'js/jquery.min.js?ver=20180701000000';
+var jsElement=document.createElement('link')
+jsElement.setAttribute('type','text/javascript')
+jsElement.setAttribute('href', jsURL);
+document.getElementsByTagName("head")[0].appendChild(jsElement);
+
+		jQuery.noConflict();
+			(function($) { 
+				$(function() {
+					(function($){$.fn.hoverIntent=function(f,g){var cfg={sensitivity:7,interval:100,timeout:0};cfg=$.extend(cfg,g?{over:f,out:g}:f);var cX,cY,pX,pY;var track=function(ev){cX=ev.pageX;cY=ev.pageY;};var compare=function(ev,ob){ob.hoverIntent_t=clearTimeout(ob.hoverIntent_t);if((Math.abs(pX-cX)+Math.abs(pY-cY))<cfg.sensitivity){$(ob).unbind("mousemove",track);ob.hoverIntent_s=1;return cfg.over.apply(ob,[ev]);}else{pX=cX;pY=cY;ob.hoverIntent_t=setTimeout(function(){compare(ev,ob);},cfg.interval);}};var delay=function(ev,ob){ob.hoverIntent_t=clearTimeout(ob.hoverIntent_t);ob.hoverIntent_s=0;return cfg.out.apply(ob,[ev]);};var handleHover=function(e){var p=(e.type=="mouseover"?e.fromElement:e.toElement)||e.relatedTarget;while(p&&p!=this){try{p=p.parentNode;}catch(e){p=this;}}if(p==this){return false;}var ev=jQuery.extend({},e);var ob=this;if(ob.hoverIntent_t){ob.hoverIntent_t=clearTimeout(ob.hoverIntent_t);}if(e.type=="mouseover"){pX=ev.pageX;pY=ev.pageY;$(ob).bind("mousemove",track);if(ob.hoverIntent_s!=1){ob.hoverIntent_t=setTimeout(function(){compare(ev,ob);},cfg.interval);}}else{$(ob).unbind("mousemove",track);if(ob.hoverIntent_s==1){ob.hoverIntent_t=setTimeout(function(){delay(ev,ob);},cfg.timeout);}}};return this.mouseover(handleHover).mouseout(handleHover);};})(jQuery);
+
+					$(function () {
+						$('.dropdown').each(function () {
+							$(this).parent().eq(0).hoverIntent({
+								timeout: 100,
+								over: function () {
+									var current = $('.dropdown:eq(0)', this);
+									current.slideDown(100);
+								},
+								out: function () {
+									var current = $('.dropdown:eq(0)', this);
+									current.fadeOut(200);
+								}
+							});
+						});
+						$('.dropdown a').hover(function () {
+							$(this).stop(true).animate({paddingLeft: '10px'}, {speed: 100, easing: 'easeOutBack'});
+						}, function () {
+							$(this).stop(true).animate({paddingLeft: '0'}, {speed: 100, easing: 'easeOutBounce'});
+						});
+						pic1 = new Image(310, 672);
+						pic1.src = "images/dropdown.png"; 
+						pic2 = new Image(4, 40);
+						pic2.src = "images/dropselectionleft.png"; 
+						pic3 = new Image(394, 40);
+						pic3.src = "images/dropselectionright.png";
+					});
+				});
+			})(jQuery);
+		</script>
+		<!-- End Drop Down Menu Script -->
+		
+		<!-- Start jTab -->
+		<script type="text/javascript">
+		jQuery.noConflict();
+		(function($){
+			$.jtab({
+				mainLinkTag: "#mininav a", // much like a css selector, you must have a 'title' attribute that links to the div id name
+				activeLinkClass: "selected", // class that is applied to the tab once it's clicked
+				hiddenContentClass: "hiddencontent", // the class of the content you are hiding until the tab is clicked
+				showDefaultTab: 1, // 1 will open the first tab, 2 will open the second etc.  null will open nothing by default
+				showErrors: true, // true/false - if you want errors to be alerted to you
+				effect: 'fade', // null, 'slide' or 'fade' - do you want your content to fade in or slide in?
+				effectSpeed: 'fast' // 'slow', 'medium' or 'fast' - the speed of the effect
+			})		
+		})
+		
+		$(document).ready(function () {
+		$('div.toshow').delay( 1500 ).fadeIn(100).animate({
+			borderSpacing: -360
+		}, {
+			step: function(now, fx) {
+				$(this).css('-webkit-transform', 'rotateX(' + now + 'deg)');
+				$(this).css('-moz-transform', 'rotateX(' + now + 'deg)');
+				$(this).css('transform', 'rotateX(' + now + 'deg)');
+			},
+			complete: function() {
+				$('div.toshow2').fadeIn(100).animate({
+			borderSpacing: -360
+		}, {
+			step: function(now, fx) {
+				$(this).css('-webkit-transform', 'rotateX(' + now + 'deg)');
+				$(this).css('-moz-transform', 'rotateX(' + now + 'deg)');
+				$(this).css('transform', 'rotateX(' + now + 'deg)');
+			},
+			complete: function() {
+				},
+			duration: 'slow'
+		}, 'swing');
+		},
+			duration: 'slow'
+		}, 'swing');
+                $next.animate({
+		borderSpacing: -90
+	}, {
+		step: function(now, fx) {
+			$(this).css('-webkit-transform', 'rotateX(' + now + 'deg)');
+			$(this).css('-moz-transform', 'rotateX(' + now + 'deg)');
+			$(this).css('transform', 'rotateX(' + now + 'deg)');
+		},
+		duration: 'slow'
+	}, 'swing').show();
+});
+		</script>
+		<!-- End jTab -->
+	</body> 
+</html> 

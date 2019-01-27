@@ -1,0 +1,24 @@
+"SELECT 
+         tickets.company, tickets.datetime, tickets.ticketnumber, 
+         customer_notes.customer, customer_notes.timestamp, customer_notes.notes 
+    FROM 
+       tickets, customer_notes 
+    WHERE tickets.company = '".$_GET["seq"]."' AND 
+          customer_notes.customer = '".$_GET["seq"]."' 
+    GROUP BY customer_notes.customer, tickets.company ";
+
+    $rs=mysql_query($sql,$conn) or die(mysql_error());
+    echo '<table width="100%" border="0" cellspacing="5" cellpadding="5">';
+    while($result=mysql_fetch_array($rs))
+    {
+        echo '<tr>
+                <td>'.$result["timestamp"].'</td>
+                <td>'.$result["notes"].'</td>
+              </tr>
+              <tr>
+                <td>'.$result["datetime"].'</td>
+                <td>'.$result["ticketnumber"].'</td>
+              </tr>';
+    }
+    echo '</table>';
+    ?>

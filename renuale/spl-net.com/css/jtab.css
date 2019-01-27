@@ -1,0 +1,54 @@
+* {
+	margin:0;
+	/*padding:0;*/
+	}
+
+#wrap {
+	margin:20px auto;
+	width:850px;
+	}
+#mininav a, #mininav a:active, #mininav a:visited {
+	display:block;
+	float:left;
+	padding:5px 8px;
+	background:#DAF1C9;
+	color:green;
+	margin-right:10px;
+	text-decoration:none;
+	outline:none;
+	}
+#mininav a.selected, #mininav a.selected:active, #mininav a.selected:visited {
+	background:#C51D1D;
+	color:#fff;
+	text-decoration:none;
+	outline:none;
+	}
+#mininav2 a, #mininav2 a:active, #mininav2 a:visited {
+	display:block;
+	float:left;
+	padding:5px 8px;
+	background:#DAF1C9;
+	color:green;
+	margin-right:10px;
+	text-decoration:none;
+	outline:none;
+	}
+
+.hiddencontent,.hiddencontent2 {
+	padding:12px;
+	background:#eee;
+	display:none;
+	}
+.clear {
+	clear:both;
+	}
+h1 {
+	color:#009900;
+	padding:20px 0;
+	}
+h2 {
+	color:#999999;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 0 10px 0;
+	}
